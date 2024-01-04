@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "shubham-sg-bucket-1"
+    bucket = "shubhams-s3-bucket"
     key = "main"
     region = "ap-south-1"
     dynamodb_table = "my-dynamodb-table"
