@@ -52,21 +52,21 @@ resource "aws_instance" "myFirstInstance" {
   }
 }
 # REQ0001 created ec2
-resource "aws_instance" "REQ0001Instance" {
-  ami           = var.ami_id
-  key_name      = var.key_name
-  instance_type = var.instance_type
-  vpc_security_group_ids = [aws_security_group.jenkins-sg-2022.id]
-  tags= {
-    Name = "REQ0001"
-  }
-}
+//resource "aws_instance" "REQ0001Instance" {
+  //ami           = var.ami_id
+  //key_name      = var.key_name
+  //instance_type = var.instance_type
+  //vpc_security_group_ids = [aws_security_group.jenkins-sg-2022.id]
+  //tags= {
+    //Name = "REQ0001"
+  //}
+//}
 
 # Create Elastic IP address
-resource "aws_eip" "myFirstInstance" {
-  vpc      = true
-  instance = aws_instance.myFirstInstance.id
-tags= {
-    Name = "my_elastic_ip"
-  }
-}
+//resource "aws_eip" "myFirstInstance" {
+  //vpc      = true
+  //instance = aws_instance.myFirstInstance.id
+//tags= {
+  //  Name = "my_elastic_ip"
+ // }
+//}
